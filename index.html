@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Pyo Payments</title>
   <meta name="description"
-    content="Pyo gives you a powerful low-code platform to build EMV, NFC, and Mobile payment acceptance solutions.">
+    content="Pyo gives you a powerful low-code platform to build EMV, NFC, and mobile payment acceptance solutions.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="shortcut icon" href="assets/img/favicon.ico">
@@ -31,7 +31,8 @@
 
     <div class="container position-relative">
       <a class="navbar-brand" href="/index.html">
-        <include src="assets/img/svg/logo.svg"></include>
+        <!-- logo -->                
+        <img height="35px" src="assets/img/logo.png">
       </a>
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
@@ -39,7 +40,23 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end mt-2 mt-lg-0" id="navbar-collapse">
-        <include src="navbar-menu.html"></include>
+        <!--<ul class="navbar-nav navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">-->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">About</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Contact</a>
+          </li>    
+          <li class="nav-item ml-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-sm btn-primary hover-lift-light mt-1" href="#" onclick="ScrollLearnMore();return false;" target="_blank">
+              Learn More
+            </a>
+          </li>  
+        </ul>
       </div> <!-- end .navbar-collapse -->
     </div> <!-- end .container -->
   </nav>
@@ -48,60 +65,106 @@
   <section class="bg-light pt-6 pt-md-7">
     <div class="container text-center">
       <div class="fx-fade-up animation-delay-1">
-        <h1 class="display-4 text-darkblue">
-          Build Custom Payment Applications Without Code
-        </h1>
+        <h2 class="display-4 text-darkblue">
+          Build custom payment solutions without code.
+        </h2>
         <p class="w-lg-80 lead text-secondary mx-auto mt-4 mb-5">
-          Pyo gives you a powerful low-code platform to build EMV, NFC, and Mobile payment acceptance solutions.
+          Pyo gives you a powerful low-code platform to build EMV, NFC, and mobile payment acceptance solutions.
         </p>
-        <a href="#" class="btn btn-success btn-lg w-lg-250 text-uppercase-bold-sm shadow-sm hover-lift-light">
+        <a class="btn btn-success btn-lg w-lg-250 text-uppercase-bold-sm shadow-sm hover-lift-light" href="#" onclick="ScrollLearnMore();return false;" target="_blank">
           Learn More
         </a>
-      </div>
-
-      <img src="assets/img/screenshots/webapp-1.png"
-        class="img-fluid border border-gray-200 shadow-light-lg rounded-lg mt-6 mb-n9 fx-fade-up animation-delay-4"
-        alt="">
+      </div>            
+      <img src="assets/img/builder_image.png" class="img-fluid mt-6 mb-n9 fx-fade-up animation-delay-4">
     </div>
   </section>
+
+  <!-- Features #2 -->
+  <div id="learn_more" class="mt-8 mb-5">
+    <div class="container text-center text-lg-left">
+      <span class="svg-icon svg-icon-xxl text-primary ml-n2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-e</title><line x1="400" y1="256" x2="112" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+      </span>
+
+      <h1 class="text-darkblue font-weight-normal">
+        Full in-store payment solutions, no code.
+      </h1>
+
+      <div class="row mt-6">
+        <!-- Feature -->
+        <div class="col-lg-4">
+          <div class="svg-icon svg-icon-xl text-primary">            
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                  <path d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z" fill="#000000" fill-rule="nonzero"></path>
+                  <path d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z" fill="#000000" opacity="0.3"></path>
+              </g>
+          </svg>
+          </div>
+          <h4 class="text-darkblue font-weight-normal mt-4">
+            Build Tech Faster
+          </h4>
+          <p class="text-muted mt-4">
+            Build applications fast without a single Software Developer. Building Terminal and mPos applications is expensive and slow. Pyo gives you standard components and a visual drag and drop interface to build an entire in-store applications.
+          </p>
+        </div>
+
+        <!-- Feature -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="svg-icon svg-icon-xl text-primary">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                  <path d="M18.5,8 C17.1192881,8 16,6.88071187 16,5.5 C16,4.11928813 17.1192881,3 18.5,3 C19.8807119,3 21,4.11928813 21,5.5 C21,6.88071187 19.8807119,8 18.5,8 Z M18.5,21 C17.1192881,21 16,19.8807119 16,18.5 C16,17.1192881 17.1192881,16 18.5,16 C19.8807119,16 21,17.1192881 21,18.5 C21,19.8807119 19.8807119,21 18.5,21 Z M5.5,21 C4.11928813,21 3,19.8807119 3,18.5 C3,17.1192881 4.11928813,16 5.5,16 C6.88071187,16 8,17.1192881 8,18.5 C8,19.8807119 6.88071187,21 5.5,21 Z" fill="#000000" opacity="0.3"></path>
+                  <path d="M5.5,8 C4.11928813,8 3,6.88071187 3,5.5 C3,4.11928813 4.11928813,3 5.5,3 C6.88071187,3 8,4.11928813 8,5.5 C8,6.88071187 6.88071187,8 5.5,8 Z M11,4 L13,4 C13.5522847,4 14,4.44771525 14,5 C14,5.55228475 13.5522847,6 13,6 L11,6 C10.4477153,6 10,5.55228475 10,5 C10,4.44771525 10.4477153,4 11,4 Z M11,18 L13,18 C13.5522847,18 14,18.4477153 14,19 C14,19.5522847 13.5522847,20 13,20 L11,20 C10.4477153,20 10,19.5522847 10,19 C10,18.4477153 10.4477153,18 11,18 Z M5,10 C5.55228475,10 6,10.4477153 6,11 L6,13 C6,13.5522847 5.55228475,14 5,14 C4.44771525,14 4,13.5522847 4,13 L4,11 C4,10.4477153 4.44771525,10 5,10 Z M19,10 C19.5522847,10 20,10.4477153 20,11 L20,13 C20,13.5522847 19.5522847,14 19,14 C18.4477153,14 18,13.5522847 18,13 L18,11 C18,10.4477153 18.4477153,10 19,10 Z" fill="#000000"></path>
+              </g>
+          </svg>
+          </div>
+          <h4 class="text-darkblue font-weight-normal mt-4">
+            Secure by Design
+          </h4>
+          <p class="text-muted mt-4">
+            EMV and secure transactions come out of the box. Your new applications will automatically include all the features needed for handing secure Credit Card transactions along with device registration and identification. No need to worry about handling this.
+          </p>
+        </div>
+
+        <!-- Feature -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="svg-icon svg-icon-xl text-primary">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M3.70710678,15.7071068 C3.31658249,16.0976311 2.68341751,16.0976311 2.29289322,15.7071068 C1.90236893,15.3165825 1.90236893,14.6834175 2.29289322,14.2928932 L8.29289322,8.29289322 C8.67147216,7.91431428 9.28105859,7.90106866 9.67572463,8.26284586 L15.6757246,13.7628459 C16.0828436,14.1360383 16.1103465,14.7686056 15.7371541,15.1757246 C15.3639617,15.5828436 14.7313944,15.6103465 14.3242754,15.2371541 L9.03007575,10.3841378 L3.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(9.000003, 11.999999) rotate(-270.000000) translate(-9.000003, -11.999999) "></path>
+                    <rect fill="#000000" opacity="0.3" x="12" y="17" width="10" height="2" rx="1"></rect>
+                </g>
+            </svg>
+          </div>
+          <h4 class="text-darkblue font-weight-normal mt-4">
+            Terminal Management
+          </h4>
+          <p class="text-muted mt-4">
+            Terminal Management with device info, stats, and customization comes out of the box and all terminal applications automatically register themselves.
+            Terminals running software built with Pyo, will automatically be managed by our cloud Terminal Management System. No need to worry about device registration, troubleshooting, and replacement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Footer -->
   <footer class="footer footer-dark bg-dark">
     <div class="container text-center">
       <div class="row">
-
-        <div class="d-flex justify-content-center mt-6">
-          <a href="#" class="hover-lift-light text-decoration-none mx-2">
-            <span class="icon-circle footer-social-icon">
-              <i class="fab fa-twitter fa-lg"></i>
-            </span>
-          </a>
-          <a href="#" class="hover-lift-light text-decoration-none mx-2">
-            <span class="icon-circle footer-social-icon">
-              <i class="fab fa-facebook-square fa-lg"></i>
-            </span>
-          </a>
-          <a href="#" class="hover-lift-light text-decoration-none mx-2">
-            <span class="icon-circle footer-social-icon">
-              <i class="fab fa-github fa-lg"></i>
-            </span>
-          </a>
-          <a href="#" class="hover-lift-light text-decoration-none mx-2">
-            <span class="icon-circle footer-social-icon">
-              <i class="fab fa-dribbble fa-lg"></i>
-            </span>
-          </a>
-        </div>
-
-        <div class="mt-6">
+        <div class="mt-1">
           <p class="footer-text mb-2">
             Pyo Payments, Inc. © 2021.
           </p>
         </div>
-
-        <div class="mt-6">
+        <div class="mt-1">
           <div class="footer-brand">
-            <include src="/assets/img/svg/logo.svg"></include>
+            <img height="35px" src="assets/img/logo_light.png">
           </div>
         </div>
       </div>
@@ -112,6 +175,19 @@
 
   <!-- Main Theme file -->
   <script src="/assets/js/theme.min.js"></script>
+
+  <script>
+    function ScrollLearnMore(){
+      var element = document.getElementById('learn_more')
+      var rect = element.getBoundingClientRect() 
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+      window.scroll({
+        top: rect.top + rect.height / 2 - viewHeight / 2,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
 </body>
 
