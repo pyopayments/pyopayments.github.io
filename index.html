@@ -39,7 +39,16 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end mt-2 mt-lg-0" id="navbar-collapse">
-        <include src="navbar-menu.html"></include>
+        <ul class="navbar-nav navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>    
+          <li class="nav-item ml-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-sm btn-primary hover-lift-light mt-1" href="#" onclick="ScrollLearnMore();return false;" target="_blank">
+              Learn More
+            </a>
+          </li>  
+        </ul>
       </div> <!-- end .navbar-collapse -->
     </div> <!-- end .container -->
   </nav>
@@ -54,7 +63,7 @@
         <p class="w-lg-80 lead text-secondary mx-auto mt-4 mb-5">
           Pyo gives you a powerful low-code platform to build EMV, NFC, and mobile payment acceptance solutions.
         </p>
-        <a href="#" class="btn btn-success btn-lg w-lg-250 text-uppercase-bold-sm shadow-sm hover-lift-light">
+        <a class="btn btn-success btn-lg w-lg-250 text-uppercase-bold-sm shadow-sm hover-lift-light" href="#" onclick="ScrollLearnMore();return false;" target="_blank">
           Learn More
         </a>
       </div>
@@ -66,7 +75,7 @@
   </section>
 
   <!-- Gradient wrapper -->
-  <section class="mt-8 pb-6 bg-gradient-light">
+  <section id="learn_more" class="mt-8 pb-6 bg-gradient-light">
     <!-- Features #1 -->
     <div class="pt-8 pt-lg-9">
       <div class="container">
@@ -180,6 +189,19 @@
 
   <!-- Main Theme file -->
   <script src="/assets/js/theme.min.js"></script>
+
+  <script>
+    function ScrollLearnMore(){
+      var element = document.getElementById('learn_more')
+      var rect = element.getBoundingClientRect() 
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+      window.scroll({
+        top: rect.top + rect.height / 2 - viewHeight / 2,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
 </body>
 
